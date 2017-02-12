@@ -1,5 +1,7 @@
 function diceClick() {
-        this.className = 'side3';
+        var diceRoll = Math.ceil(Math.random() * 6);
+        this.className = 'side' + diceRoll;
+        alert('You rolled a ' + diceRoll);
 }
 
 function myLoadEvent() {
