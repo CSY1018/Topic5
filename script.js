@@ -1,7 +1,7 @@
 function diceClick() {
-        var diceRoll = Math.ceil(Math.random() * 6);
-        this.className = 'side' + diceRoll;
-        alert('You rolled a ' + diceRoll);
+       var diceRoll = Math.ceil(Math.random() * 6);
+       this.className = 'side' + diceRoll;
+	   this.nextSibling.nextSibling.firstChild.nodeValue = 'You rolled a ' + diceRoll;
 }
 
 function myLoadEvent() {
